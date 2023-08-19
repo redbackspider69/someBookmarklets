@@ -3,7 +3,7 @@
     const tokens = expression.match(/(\d+|\+|\-|\*|\/|\^)/g);
 
     if (!tokens) {
-      return "Error: Invalid expression";
+      return "Invalid expression";
     }
 
     const precedence = {
@@ -65,11 +65,11 @@
     if (evaluationStack.length === 1) {
       return evaluationStack[0];
     } else {
-      return "Error: Invalid expression";
+      return "Invalid expression";
     }
   }
 
-  var inputExpression = prompt("Mathematical Expression (use symbols such as * instead of X and / instead of ÷):");
+  var inputExpression = prompt("Mathematical Expression (use symbols +, -, *, / and ^):");
   var result = calculateExpression(inputExpression);
   alert(`${inputExpression} = ${result}`);
 })();
