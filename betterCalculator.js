@@ -73,7 +73,7 @@
       }
     }
   
-    var inputExpression = prompt("Mathematical Expression (use symbols +, -, *, /, ^, and sqrt()) For example:\n1+1=2\n2-1=1\n2*3=6\n6/2=3\nsqrt(9)=3\n3^2=9");
+    var inputExpression = prompt("Input mathematical expression, for example:\n1+1=2\n2-1=1\n2*3=6\n6/2=3\nsqrt(9)=3\n3^2=9");
     var result = calculateExpression(inputExpression);
     alert(`${inputExpression} = ${result}`);
   })();
